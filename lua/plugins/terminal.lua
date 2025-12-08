@@ -1,0 +1,56 @@
+return {
+  -- {
+  --   -- The main plugin repository
+  --   "nvzone/floaterm",
+  --
+  --   -- Specify the dependency (volt is required by floaterm)
+  --   dependencies = "nvzone/volt",
+  --
+  --   -- Lazy-load the plugin when the main command is executed
+  --   cmd = "FloatermToggle",
+  --
+  --   -- Keymaps for the main FloatermToggle command
+  --   keys = {
+  --     {
+  --       "<leader>ft",
+  --       "<cmd>FloatermToggle<cr>",
+  --       desc = "Toggle Floating Terminal",
+  --     },
+  --   },
+  --
+  --   -- Configuration options (opts is passed to require("floaterm").setup)
+  --   opts = {
+  --     -- Set the default size of the floating window (h=height, w=width)
+  --     size = {
+  --       h = 95, -- 60% of screen height
+  --       w = 95, -- 70% of screen width
+  --     },
+  --
+  --     -- Enable a border for the floating window
+  --     border = true,
+  --
+  --     -- Pre-define a list of terminals you can cycle through
+  --     terminals = {
+  --       { name = "Terminal" },
+  --       -- { name = "LazyGit", cmd = "lazygit" },
+  --       -- { name = "PythonREPL", cmd = "python" },
+  --     },
+  --
+  --     -- Custom mappings for the terminal buffer
+  --     -- These mappings will only be active when the floating terminal is open.
+  --     mappings = {
+  --       term = function(buf)
+  --         -- Remap Ctrl-j and Ctrl-k to cycle between multiple terminals
+  --         -- This is useful if you use :FloatermNew
+  --         vim.keymap.set({ "n", "t" }, "<C-j>", function()
+  --           require("floaterm.api").cycle_term_bufs("next")
+  --         end, { buffer = buf, desc = "Next Floaterm" })
+  --
+  --         vim.keymap.set({ "n", "t" }, "<C-k>", function()
+  --           require("floaterm.api").cycle_term_bufs("prev")
+  --         end, { buffer = buf, desc = "Prev Floaterm" })
+  --       end,
+  --     },
+  --   },
+  -- },
+}
