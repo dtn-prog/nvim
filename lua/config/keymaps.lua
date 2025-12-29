@@ -17,3 +17,5 @@ vim.keymap.set("n", "q:", ":", { noremap = true })
 -- Optional: Disable other command-line window shortcuts
 vim.keymap.set("n", "q/", "<nop>", { desc = "Disable search history" })
 vim.keymap.set("n", "q?", "<nop>", { desc = "Disable search history" })
+
+vim.keymap.set("n", "<leader>bs", "<cmd>w<CR>", { desc = "Save buffer" })
