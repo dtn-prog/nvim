@@ -126,7 +126,7 @@ return {
           map_split(buf_id, opts.mappings and opts.mappings.go_in_vertical_plus or "<C-w>V", "vertical", true)
 
           -- 'go' key opens file or folder externally
-          vim.keymap.set("n", "go", open_with_default_app, { buffer = buf_id, desc = "Open with system default app" })
+          vim.keymap.set("n", "gx", open_with_default_app, { buffer = buf_id, desc = "Open with system default app" })
 
           -- vim.keymap.set("n", "<Esc>", function()
           --   vim.cmd("q") -- or vim.cmd("bwipeout") if you want full buffer wipe
