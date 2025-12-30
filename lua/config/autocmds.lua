@@ -12,3 +12,12 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   pattern = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif" },
   command = "setlocal filetype=image",
 })
+
+--- Lua
+vim.o.autowriteall = true
+vim.api.nvim_create_autocmd({ "InsertLeavePre", "TextChanged", "TextChangedP" }, {
+  pattern = "*",
+  callback = function()
+    vim.cmd("silent! write")
+  end,
+})
