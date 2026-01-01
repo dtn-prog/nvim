@@ -59,3 +59,5 @@ if vim.fn.executable("pwsh") == 1 then
 end
 
 vim.o.updatetime = 200 -- The hover will appear after 200ms of idling
+
+vim.g.lazyvim_python_lsp = "basedpyright"
